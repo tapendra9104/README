@@ -1,0 +1,58 @@
+<svg width="1280" height="320" viewBox="0 0 1280 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="320" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a">
+        <animate attributeName="stop-color" values="#0f172a;#052e16;#0f172a" dur="12s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#111827">
+        <animate attributeName="stop-color" values="#111827;#14532d;#111827" dur="12s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#22c55e" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="320" rx="28" fill="url(#bg)" />
+
+  <g opacity="0.22">
+    <circle cx="1080" cy="70" r="120" fill="#22c55e">
+      <animate attributeName="cx" values="1080;1110;1080" dur="10s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="1180" cy="210" r="88" fill="#38bdf8">
+      <animate attributeName="cy" values="210;192;210" dur="8s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="980" cy="220" r="64" fill="#16a34a">
+      <animate attributeName="r" values="64;76;64" dur="9s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <path d="M0 256C124 226 241 218 356 226C506 237 640 272 790 268C939 264 1082 224 1280 248V320H0V256Z" fill="#86efac" opacity="0.16" />
+  <path d="M0 268C155 244 286 245 405 257C549 272 651 300 803 290C941 281 1063 243 1280 266" stroke="url(#line)" stroke-width="4" stroke-linecap="round" opacity="0.65" />
+
+  <rect x="72" y="64" width="182" height="34" rx="17" fill="#052e16" stroke="#22c55e" stroke-width="1.5" />
+  <text x="163" y="86" text-anchor="middle" fill="#bbf7d0" font-family="Segoe UI, Arial, sans-serif" font-size="16" font-weight="700">GitHub Profile</text>
+
+  <text x="72" y="144" fill="#ffffff" font-family="Segoe UI, Arial, sans-serif" font-size="56" font-weight="700">Tapendra Chaudhary</text>
+  <text x="72" y="190" fill="#d1fae5" font-family="Segoe UI, Arial, sans-serif" font-size="24" font-weight="500">Full Stack Developer | AI/ML Enthusiast | Building modern web experiences</text>
+
+  <g filter="url(#glow)">
+    <rect x="72" y="222" width="174" height="16" rx="8" fill="#22c55e" opacity="0.88">
+      <animate attributeName="width" values="174;238;174" dur="5.5s" repeatCount="indefinite" />
+    </rect>
+  </g>
+
+  <g opacity="0.95">
+    <rect x="72" y="244" width="12" height="12" rx="6" fill="#38bdf8" />
+    <rect x="90" y="244" width="12" height="12" rx="6" fill="#22c55e" />
+    <rect x="108" y="244" width="12" height="12" rx="6" fill="#ffffff" />
+  </g>
+</svg>
