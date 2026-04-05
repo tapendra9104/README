@@ -47,16 +47,16 @@ const tapendra = {
 ## GitHub Overview
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tapendra9104&theme=tokyonight" alt="Profile summary" width="100%" />
+  <img src="./assets/profile-summary.svg" alt="Profile summary" width="100%" />
 </div>
 
 <div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=tapendra9104&theme=tokyonight" alt="GitHub stats" height="170" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=tapendra9104&theme=tokyonight" alt="Top languages" height="170" />
+  <img src="./assets/github-stats.svg" alt="GitHub stats" height="170" />
+  <img src="./assets/top-languages.svg" alt="Top languages" height="170" />
 </div>
 
 <div align="center">
-  <img src="https://streak-stats.demolab.com?user=tapendra9104&theme=tokyonight&hide_border=true" alt="GitHub streak" width="100%" />
+  <img src="./assets/github-streak.svg" alt="GitHub streak" width="100%" />
 </div>
 
 ## Featured Projects

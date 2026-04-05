@@ -1,0 +1,39 @@
+name: Refresh Profile Assets
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Fetch SVG assets
+        run: |
+          mkdir -p assets
+          curl -fsSL "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tapendra9104&theme=tokyonight" -o assets/profile-summary.svg
+          curl -fsSL "https://github-profile-summary-cards.vercel.app/api/cards/stats?username=tapendra9104&theme=tokyonight" -o assets/github-stats.svg
+          curl -fsSL "https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=tapendra9104&theme=tokyonight" -o assets/top-languages.svg
+          curl -fsSL "https://streak-stats.demolab.com?user=tapendra9104&theme=tokyonight&hide_border=true" -o assets/github-streak.svg
+
+      - name: Commit refreshed assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile-summary.svg assets/github-stats.svg assets/top-languages.svg assets/github-streak.svg
+          if git diff --cached --quiet; then
+            echo "No asset changes"
+            exit 0
+          fi
+          git commit -m "Refresh profile assets"
+          git push
