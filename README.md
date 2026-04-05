@@ -21,7 +21,7 @@
 </div>
 
 <div align="center">
-  <a href="https://tapendra-portfolio.vercel.app">
+  <a href="https://github.com/tapendra9104/3D-portfolio">
     <img src="https://img.shields.io/badge/Portfolio-111827?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
   </a>
   <a href="https://www.linkedin.com/in/tapendra-chaudhary">
@@ -51,8 +51,8 @@ const tapendra = {
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=tapendra9104&show_icons=true&hide_border=true&theme=tokyonight&rank_icon=github" alt="GitHub stats" height="170" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tapendra9104&layout=compact&hide_border=true&theme=tokyonight" alt="Top languages" height="170" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=tapendra9104&theme=tokyonight" alt="GitHub stats" height="170" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=tapendra9104&theme=tokyonight" alt="Top languages" height="170" />
 </div>
 
 <div align="center">
@@ -101,5 +101,5 @@ const tapendra = {
 
 - GitHub: [github.com/tapendra9104](https://github.com/tapendra9104)
 - LinkedIn: [linkedin.com/in/tapendra-chaudhary](https://www.linkedin.com/in/tapendra-chaudhary)
-- Portfolio: [tapendra-portfolio.vercel.app](https://tapendra-portfolio.vercel.app)
+- Portfolio: [github.com/tapendra9104/3D-portfolio](https://github.com/tapendra9104/3D-portfolio)
 - Email: [tapendra9104@gmail.com](mailto:tapendra9104@gmail.com)
