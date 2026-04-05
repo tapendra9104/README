@@ -95,7 +95,7 @@ const tapendra = {
 
 ## Contribution Snake
 
-![Snake animation](https://raw.githubusercontent.com/tapendra9104/tapendra9104/output/github-contribution-grid-snake-dark.svg)
+![Snake animation](https://raw.githubusercontent.com/tapendra9104/README/output/github-contribution-grid-snake-dark.svg)
 
 ## Connect
 
